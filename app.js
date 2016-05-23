@@ -16,3 +16,5 @@ app.use(express.static(path.join(__dirname , 'static')));
 app.set( 'view engine', 'html' );
 // 运行ejs模块
 app.engine( '.html', require( 'ejs' ).__express );
+
+global.dbHelper = require('./common/dbHelper');
